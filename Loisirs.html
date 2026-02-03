@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil - Eportfolio</title>
+  <link href="css-bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css-personal/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu de navigation -->
+  
+  <nav id="BarreDeNavigation"class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a id="OngletPortfolio" class="navbar-brand" href="index.html">Mon Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="Ong-Exp-Loisirs" class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link active" aria-current="page" href="index.html">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link" href="Experiences.html">Expériences</a>
+        </li>
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link" href="Competences.html">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a id="couleurOngletLoisirs" class="couleurOnglet nav-link" href="Loisirs.html">Loisirs</a>
+        </li>
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+  <!-- Section Titre -->
+  <header id="SectionLoisirs">
+    <h1>Mes Loisirs</h1>
+  </header>
+
+  <!-- Section Carrousel -->
+  <main>
+    <section id="Loisirs">
+      <div id="carrouselLoisirs" class="carousel slide">
+
+        <!-- Indicateurs -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrouselLoisirs" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapo 1"></button>
+          <button type="button" data-bs-target="#carrouselLoisirs" data-bs-slide-to="1" aria-label="Diapo 2"></button>
+          <button type="button" data-bs-target="#carrouselLoisirs" data-bs-slide-to="2" aria-label="Diapo 3"></button>
+        </div>
+
+        <!-- Diapositives -->
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="img/loisirs/jeux.webp" class="d-block w-100" alt="Jeux vidéos">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jeux vidéos</h5>
+              <p>J'aime me détendre en jouant à des jeux vidéos après une longue journée.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/loisirs/tennis.jpg" class="d-block w-100" alt="Tennis">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Tennis</h5>
+              <p>Le tennis est un sport qui me permet de rester en forme et de me vider l'esprit.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/loisirs/piano.jpg" class="d-block w-100" alt="Piano">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Piano</h5>
+              <p>La musique est une passion qui m'accompagne depuis longtemps et que j'adore pratiquer.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Boutons navigation -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrouselLoisirs" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrouselLoisirs" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footerExperiencesLoisirs">
+     Techno Web Eportfolio réalisé à l'aide de Bootstrap - Enzo CHEN BUT SD EMS FI 
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
