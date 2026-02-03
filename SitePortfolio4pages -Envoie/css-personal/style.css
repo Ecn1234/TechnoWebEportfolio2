@@ -1,0 +1,336 @@
+/* =========================
+   GLOBAL
+========================= */
+
+
+html, #TailleBody_ProfilEtCompetenceEtContact{
+		height: 100%
+}
+
+
+
+body{
+	position: relative; /*pour que le footer se place par rapport à son parent qui est body*/
+}
+
+
+/* =========================
+   NAVBAR sans scroll (Profil et Contact)
+========================= */
+#BarreDeNavigation {
+  background-color: #19b041 !important; /* !important est nécessaire ici (même si on l'a pas vu en cours) car le css bootstrap priorise sur mon css personnel donc pour éviter ça, je suis obligé de mettre le mot clé !important)*/
+  position: fixed;
+  width: 100%;
+  z-index:9999; /* Pour que ça soit au premier plan, normalement pas besoin mais comme dans le bootstrap il y a des éléments qui sont au premier plan alors on doit le mettre si l'on veut que la barre de nav soit au premier plan (même si on l'a pas vu en cours)*/
+  
+}
+
+#OngletPortfolio {
+  margin-left: 300px;
+  color: white;
+}
+
+#OngletPortfolio:hover{
+  margin-left: 300px;
+  color: black;
+  opacity: 0.5;
+}		
+
+#AutresOnglets	{
+  margin-right: 300px;
+}
+
+.couleurOnglet {
+  color: white !important;
+}
+
+.couleurOnglet:hover{
+  color: black !important;
+  opacity: 0.5;
+}	
+
+	
+
+/*
+
+Barre de NAV : Onglet colorié selon l'onglet où l'on est
+
+*/
+
+#couleurOngletProfil, #couleurOngletExperiences, #couleurOngletCompetences, #couleurOngletLoisirs, #couleurOngletContact{
+	color: black !important;
+	opacity: 1;
+}
+
+
+
+
+/* =========================
+   NAVBAR avec scroll les pages plus grand que l'écran (experiences, loisirs) car la barre de scroll  fait décaller tout le menu vers la gauche donc je dois le redécaller vers la droite (15px la barre de scroll)
+========================= */
+
+#Ong-Exp-Loisirs{
+	margin-right: 285px;
+}
+
+
+
+/* =========================
+   TITRES DE SECTIONS (commun)
+========================= */
+#SectionExperiences,
+#SectionCompetences,
+#SectionLoisirs,
+#SectionContact {
+  text-align: center;
+  padding: 60px 0px 40px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+#SectionExperiences h1,
+#SectionCompetences h1,
+#SectionLoisirs h1,
+#SectionContact h1 {
+  
+  color: #19b041;
+  position: relative; /*peut enelver*/
+  display: inline-block; /*peut enelver*/
+}
+
+/* =========================
+   SECTION PROFIL
+========================= */
+#SectionProfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 280px;
+}
+
+#photoHomme2 {
+  width: 320px;
+  height: 300px;
+  
+}
+
+#texteProfil {
+  text-align: left;
+  max-width: 600px;
+  margin-left: 40px;
+}
+
+#texteProfil h1 {
+  font-size: 45px;
+  margin-bottom: 5px;
+}
+
+
+#texteProfil h2 {
+  font-size: 22px;
+  color: #19b041;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+
+#texteProfil p {
+  font-size: 18px;
+}
+
+
+/* =========================
+   EXPERIENCES & PROJETS
+========================= */
+#ExperiencesProfessionnelles,
+#ProjetsUniversitaires {
+  padding: 30px 0px 30px 0px;
+}
+
+#ProjetsUniversitaires {
+  padding-bottom: 200px;
+}
+
+#ExperiencesProfessionnelles h2,
+#ProjetsUniversitaires h2 {
+  text-align: center;
+  color: black;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.EnsembleCartes {
+  padding: 0 40px;
+  
+}
+
+
+.Carte {
+  border: none;
+  margin: 25px
+}
+
+.carteTitre {
+  color: #19b041;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.Carte .bouton {
+  background-color: #19b041;
+  border-color: #19b041;
+  border-radius: 8px;
+}
+
+.Carte .bouton:hover {
+	border-color: #198754;
+  background-color: #198754;
+}
+
+/* =========================
+   COMPETENCES
+========================= */
+
+
+.UnBlocCompetence {
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.TitreCompetence {
+  color: #198754;
+  
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.ListeCompetences{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ListeCompetences li {
+  padding: 6px 0;
+  color: #555;
+  border-bottom: 1px solid #f0f0f0;
+  
+}
+
+
+
+
+/* =========================
+   LOISIRS
+========================= */
+
+#Loisirs{
+	padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+
+#FormulaireContact {
+
+  position: relative;
+  top: 50px;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: #f8f9fa;
+  
+}
+
+.NomCase {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.ZoneDeTexte {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.boutonContact{
+  background-color: #19b041;
+  border-color: #19b041 ;
+  border-radius: 8px;
+  padding: 10px 30px;
+}
+
+.boutonContact:hover {
+  background-color: #198754;
+  border-color: #198754 ;
+}
+
+
+
+/* =========================
+   FOOTER sans barre de scroll
+========================= */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+  bottom: 0px;
+  background: #1e1f1e; 
+  height: 50px;
+  color: white;
+}
+
+/* =========================
+   FOOTER avec barre de scroll decallé vers la droite de 15px pour compenser l'espace perdu à cause de la barre de scroll
+========================= */
+#footerExperiencesLoisirs{
+	padding-left: 15px;
+}
+
+
+
+
+
+
+
+

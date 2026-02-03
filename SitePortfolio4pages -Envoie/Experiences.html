@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil - Eportfolio</title>
+  <link href="css-bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="css-personal/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu de navigation -->
+  
+  <nav id="BarreDeNavigation"class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a id="OngletPortfolio" class="navbar-brand" href="index.html">Mon Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul id="Ong-Exp-Loisirs" class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link active" aria-current="page" href="index.html">Profil</a>
+        </li>
+        <li class="nav-item">
+          <a id="couleurOngletExperiences" class="couleurOnglet nav-link" href="Experiences.html">Expériences</a>
+        </li>
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link" href="Competences.html">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link" href="Loisirs.html">Loisirs</a>
+        </li>
+        <li class="nav-item">
+          <a class="couleurOnglet nav-link" href="Contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+
+  <!-- Section Titre -->
+  <header id="SectionExperiences">
+    <h1>Mes expériences</h1>
+  </header>
+
+  <!-- Section Contenu -->
+  <main>
+
+    <!-- Expériences professionnelles -->
+    <section id="ExperiencesProfessionnelles">
+      <h2>Expériences professionnelles</h2>
+      <div class="EnsembleCartes card-group">
+
+        <!-- Carte : Serveur -->
+        <div id="carteServeur" class="Carte card">
+          <img src="img/experiences/restaurant.jpg" class="card-img-top" alt="Restaurant Europole">
+          <div class="card-body">
+            <h5 class="carteTitre card-title">Serveur chez Europole</h5>
+			<p class="card-text"><small class="text-body-secondary">Juin 2024</small></p>
+            <p class="card-text">
+              Travailler en tant que serveur dans un restaurant m'a apporté bien plus qu'un simple revenu étudiant. 
+              Ce job m'a permis de développer des compétences précieuses, tant sur le plan professionnel que personnel. 
+              J'ai appris à travailler efficacement en équipe avec des gens que je ne connais pas, à gérer le stress et les situations imprévues, 
+              et à rester organisé même lorsque le restaurant est très fréquenté.
+            </p>
+            <a href="https://www.europole.net/nos-realisations/restaurant-jaja" class="bouton btn btn-primary">Plus de détails</a>
+          </div>
+        </div>
+
+        <!-- Carte : Caissier -->
+        <div class="Carte card">
+          <img src="img/experiences/caissier.jpg" class="card-img-top" alt="Supermarché Carrefour">
+          <div class="card-body">
+            <h5 class="carteTitre card-title">Caissier chez Carrefour</h5>
+			<p class="card-text"><small class="text-body-secondary">Juillet 2024</small></p>
+            <p class="card-text">
+              Travailler en tant que caissier dans un supermarché m'a apporté de nombreuses compétences utiles, 
+              tant sur le plan professionnel que personnel. Ce travail m'a appris à être rapide et efficace 
+              tout en restant précis, à gérer les transactions et à assurer un service client de qualité. 
+              J'ai également développé ma capacité à rester calme et concentré, même lors des périodes de forte affluence.
+            </p>
+            <a href="https://www.carrefour.fr/" class="bouton btn btn-primary">Plus de détails</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projets universitaires -->
+    <section id="ProjetsUniversitaires">
+      <h2>Projets universitaires</h2>
+      <div class="EnsembleCartes card-group">
+
+        <!-- Carte : Enquête culturelle -->
+        <div id="carteEnquete" class="Carte card">
+          <img src="img/experiences/etudiant.jpg" class="card-img-top" alt="Projet étudiant">
+          <div class="card-body">
+            <h5 class="carteTitre card-title">Enquête pratiques culturelles étudiants de l'UPC</h5>
+            <p class="card-text"><small class="text-body-secondary">Décembre 2024</small></p>
+            <p class="card-text">
+              Projet de groupe réalisé au semestre 1, portant sur les étudiants de l'Université Paris Cité. 
+              La problématique visait à savoir si le numérique transforme les pratiques culturelles traditionnelles des étudiants. 
+              J'ai participé à la conception et la diffusion d'un questionnaire via LimeSurvey, 
+              au nettoyage de 1 960 réponses, ainsi qu'à des analyses avec SQL et Excel. 
+              Les résultats ont été présentés oralement avec des visualisations créées sous Canva.
+            </p>
+            <a href="https://u-paris.fr/" class="bouton btn btn-primary">Plus de détails</a>
+          </div>
+        </div>
+
+        <!-- Carte : Pollution CO2 -->
+        <div class="Carte card">
+          <img src="img/experiences/ratp.jpg" class="card-img-top" alt="Projet RATP">
+          <div class="card-body">
+            <h5 class="carteTitre card-title">Analyse série temporelle - Pollution CO₂ des métros</h5>
+            <p class="card-text"><small class="text-body-secondary">Décembre 2025</small></p>
+            <p class="card-text">
+              La qualité de l'air dans les espaces souterrains de la RATP représente un enjeu important de santé publique. 
+              À partir de deux jeux de données couvrant 2013-2025 (plus de 111 000 observations), 
+              j'ai analysé l'évolution temporelle de la concentration en CO₂ depuis novembre 2018. 
+              La méthodologie inclut l'identification des composantes tendance et saisonnalité, 
+              ainsi que la construction de modèles de prévision pour couvrir la période d'interruption de surveillance.
+            </p>
+            <a href="https://www.ratp.fr/" class="bouton btn btn-primary">Plus de détails</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footerExperiencesLoisirs">
+     Techno Web Eportfolio réalisé à l'aide de Bootstrap - Enzo CHEN BUT SD EMS FI 
+  </footer>
+</body>
+</html>
